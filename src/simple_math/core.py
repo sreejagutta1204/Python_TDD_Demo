@@ -47,3 +47,13 @@ def average(xs: List[float]) -> float:
         ValueError: xs must not be empty
     """
     raise NotImplementedError
+def sqrt_approx(x: float) -> float:
+    """Approximate the square root using Newton's method."""
+    if x < 0:
+        raise ValueError("Cannot compute square root of negative number")
+
+    guess = x
+    for _ in range(20):  # 20 iterations is usually enough
+        guess = (guess + x / guess) / 2
+    return guess
+
