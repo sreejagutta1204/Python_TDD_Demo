@@ -1,2 +1,2 @@
-/_init.pyall_ = ['add', 'safe_divide', 'average']
-from .core import add, safe_divide, average
+__all__ = ['add', 'safe_divide', 'average', 'sqrt_approx']
+from .core import add, safe_divide, average, sqrt_approx
